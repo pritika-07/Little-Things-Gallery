@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Things Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">little things<span>.</span></a>
+        <p>A collection of moments worth keeping</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="eyebrow">A VISUAL JOURNAL</p>
+            <h1>Finding beauty in<br><em>the everyday.</em></h1>
+            <p class="intro-text">
+                A little corner of the internet for the things that make ordinary
+                days feel special.
+            </p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All moments</button>
+                <button class="filter-btn" data-category="nature">Nature</button>
+                <button class="filter-btn" data-category="coffee">Coffee</button>
+                <button class="filter-btn" data-category="books">Books</button>
+                <button class="filter-btn" data-category="places">Places</button>
+            </div>
+
+            <div class="gallery" id="gallery">
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Sunrise over a misty landscape">
+                    <div class="photo-info">
+                        <h3>Morning light</h3>
+                        <p>Nature · 01</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Coffee and a slow morning">
+                    <div class="photo-info">
+                        <h3>A slow morning</h3>
+                        <p>Coffee · 02</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="books">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=85" alt="A stack of books">
+                    <div class="photo-info">
+                        <h3>Between the pages</h3>
+                        <p>Books · 03</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="places">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=85" alt="City buildings">
+                    <div class="photo-info">
+                        <h3>Somewhere in the city</h3>
+                        <p>Places · 04</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85" alt="Sunlight filtering through a forest">
+                    <div class="photo-info">
+                        <h3>A little greener</h3>
+                        <p>Nature · 05</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85" alt="Coffee in a cafe">
+                    <div class="photo-info">
+                        <h3>Our little café</h3>
+                        <p>Coffee · 06</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="books">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85" alt="Bookshelves in a library">
+                    <div class="photo-info">
+                        <h3>Quiet corners</h3>
+                        <p>Books · 07</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="places">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Colorful buildings by the sea">
+                    <div class="photo-info">
+                        <h3>Somewhere by the sea</h3>
+                        <p>Places · 08</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with care, for the little things.</p>
+        <p>© 2026 Little Things Gallery</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn" aria-label="Close image">&times;</button>
+        <button class="lightbox-btn prev-btn" id="prevBtn" aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <p id="lightboxCaption"></p>
+        </div>
+
+        <button class="lightbox-btn next-btn" id="nextBtn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
